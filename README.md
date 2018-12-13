@@ -7,7 +7,7 @@
 * $ `npm install react react-dom @types/react @types/react-dom`
 * $ `touch app.tsx`
 * $ `npm run magic`
-## ran into errors
+ _ran into errors_
 
 ## troubleshooting
 
@@ -15,4 +15,4 @@
 * $ `npm install webpack --save-dev`
 * $ `npm install typescript@* --save-dev`
 * $ `npm run magic`
-// then the dist folder was created!
+_then the dist folder was created!_

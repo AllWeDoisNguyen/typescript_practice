@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nconst FirstComponent_1 = __webpack_require__(/*! ./src/FirstComponent */ \"./src/FirstComponent.tsx\");\nReactDOM.render(React.createElement(\"div\", null,\n    React.createElement(\"h1\", null, \"Hello, Welcome to the first page\"),\n    React.createElement(FirstComponent_1.default, null)), document.getElementById(\"root\"));\n\n\n//# sourceURL=webpack:///./app.tsx?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nconst FirstComponent_1 = __webpack_require__(/*! ./src/FirstComponent */ \"./src/FirstComponent.tsx\");\nconst UserComponent_1 = __webpack_require__(/*! ./src/UserComponent */ \"./src/UserComponent.tsx\");\nReactDOM.render(React.createElement(\"div\", null,\n    React.createElement(\"h1\", null, \"Hello, Welcome to the first page\"),\n    React.createElement(FirstComponent_1.default, null),\n    React.createElement(UserComponent_1.default, { name: \"Christina Baby\", age: 27, address: \"Da Vinci\", dob: new Date() })), document.getElementById(\"root\"));\n\n\n//# sourceURL=webpack:///./app.tsx?");
 
 /***/ }),
 
@@ -250,6 +250,18 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 "use strict";
 eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nlet Logo = \"https://logrocket.com/img/logo.png\";\nclass FirstComponent extends React.Component {\n    render() {\n        return (React.createElement(\"div\", null,\n            React.createElement(\"h1\", null, \"A Simple React Component Example with Typescript\"),\n            React.createElement(\"div\", null,\n                React.createElement(\"img\", { src: Logo })),\n            React.createElement(\"p\", null, \"I am a component which shows the logrocket logo. For more info on Logrocket, please visit Https://logrocket.com\")));\n    }\n}\nexports.default = FirstComponent;\n\n\n//# sourceURL=webpack:///./src/FirstComponent.tsx?");
+
+/***/ }),
+
+/***/ "./src/UserComponent.tsx":
+/*!*******************************!*\
+  !*** ./src/UserComponent.tsx ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nclass UserComponent extends React.Component {\n    constructor(props) {\n        super(props);\n    }\n    render() {\n        return (React.createElement(\"div\", null,\n            React.createElement(\"h1\", null, \"User Component\"),\n            \"Hello, \",\n            this.props.name,\n            React.createElement(\"br\", null),\n            \"You are \",\n            this.props.age,\n            \" years old,\",\n            React.createElement(\"br\", null),\n            \"You live at: \",\n            this.props.address,\n            React.createElement(\"br\", null),\n            \"you were born: \",\n            this.props.dob.toDateString()));\n    }\n}\nexports.default = UserComponent;\n\n\n//# sourceURL=webpack:///./src/UserComponent.tsx?");
 
 /***/ })
 
